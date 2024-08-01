@@ -1,13 +1,14 @@
 /***
  Theme Name: SetoPress64
- Theme URI: http://sumanshresthaa.com.np
- Description: Creative Seto press 
+ Theme URI: https://sumanshr.com.np
+ Description: SetoPress Global CSS
  Author: Suman Shrestha
  Author URI: https://sumanshresthaa.com.np
  Version: 1.0
  License: GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ==============================
+
 TABLE CONTENT
  Import Google Fonts
  Include Third Party CSS Library
@@ -1003,6 +1004,647 @@ nav.tab-nav .nav-tabs{border:none;}
 
 
 
+/*-------------------------------------------------------
+02. CUSTOM GLOBAL CSS SECTION
+---------------------------------------------------------*/
+body, p{font-family: Mukta !important;}
+h1, h2, h3, h4, h5, h6{font-family: Mukta !important;}
+
+
+
+/*-------------------------------------------------------
+03. Homepage Popup css
+---------------------------------------------------------*/
+/* The Modal (background) */
+.setopressModal {
+    position: fixed; /* Stay in place */
+    z-index: 999999; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding: 0 20px;
+}  
+.setopressModal .modal-fullscreen{padding: 0px !important;}
+.setopressModal .modal-dialog {
+    /*max-width: 1000px;*/
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+}
+/* Modal Content */
+.setopressModal .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+} 
+.setopressModal .modal-body {
+    overflow-y: auto;
+}
+
+.setopressModal .modal-content .modal-logo {
+    text-align: center;
+    margin: 45px 0;
+}
+.setopressModal .modal-content .modal-logo .custom-logo {
+    height: 90px;
+    width: auto;
+}
+.setopressModal .modal-content .adv-img {
+    padding-top: 10px;
+}
+.setopressModal .modal-content .adv-img img {
+    height: 64vh;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* The Close Button */
+.close {
+    color: #c00 !important;
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    z-index: 999999;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    opacity: 1 !important;
+} 
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*-------------------------------------------------------
+04. CUSTOM HEADER SECTION
+---------------------------------------------------------*/
+.logo-text .custom-logo {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.today-date {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sticky-logo {
+    display: none;
+}
+.main-header.header-style-2.sticky-bar .sticky-logo {
+    display: block;
+}
+.main-header.header-style-2.sticky-bar .sticky-logo img {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 12%;
+    padding-top: 14px;
+}
+
+
+
+/*-------------------------------------------------------
+05. CUSTOM HEADER MENU SECTION
+---------------------------------------------------------*/
+.main-header.header-style-2 .main-nav ul li>a {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: Khand;
+}
+
+
+
+
+/*-------------------------------------------------------
+06. CUSTOM FLASH NEWS SECTION
+---------------------------------------------------------*/
+.news-flash-cover {
+    height: 40px;
+    border-bottom: 1px dotted #999;
+    padding-bottom: 50px;
+}
+#news-flash ul li {
+    position: relative;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    padding-top: 7px !important;
+    line-height: 30px;
+    width: 100%;
+}
+#news-flash ul li a.post-title{
+    font-family: 'Mukta';
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+.news-flash-cover .flash-news-title{
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.flashnews {
+    border-bottom: 1px dotted #999;
+}
+.flashnews .entry-meta span {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0px 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+/*-------------------------------------------------------
+07. CUSTOM AD SECTION
+---------------------------------------------------------*/
+.ads {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.ads img {
+    margin: 20px 0;
+}
+.widget_ads {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0px 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.widget_ads .ad-widget {
+    margin-bottom: 15px;
+}
+figure {border-radius: 5px; overflow: hidden;}
+.widget_ads img { border-radius: 5px;}
+figure.image .lazy{width: 100%}
+
+
+
+
+.post-featured-1 h2, .the-world h2, .technology h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+.post-featured-1.divider {
+    border-bottom: 1px solid rgb(225,225,225);
+    padding-bottom: 20px;
+}
+.post-featured-1.divider:last-child {
+    border-bottom: none;
+}
+
+
+.vertical-divider h6.post-title {font-size: 18px;}
+.entry-meta .post-cat .post-categories li a i.ti-folder {padding-right: 8px;}
+
+
+.recent-news h3{font-size: 28px; font-weight: 800;}
+.editor-picked h6 {font-size: 20px;}
+.hightlight-today h6{font-size: 18px; font-weight: 700;}
+
+.province figure.mb-15 {height: 130px; overflow: hidden;}
+.province h6 {font-size: 18px; font-weight: 600;}
+
+
+
+.sidebar-widget.widget-latest-posts .post-block-list .list-post .post-content.media-body h6{
+    font-size: 16px; font-weight: 700;}
+.sidebar-widget.widget-latest-posts .post-block-list .list-post .post-content.media-body span.numbers {
+    font-size: 36px;
+    color: #999;
+    height: 60px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/*-------------------------------------------------------
+08. CUSTOM INNER PAGE SECTION
+---------------------------------------------------------*/
+.archive_content {padding: 30px 15px;}
+ul.post-categories li {
+    display: inline-block;
+    margin-right: 15px;
+}
+h1.entry-title.title-sticky.sticky-bar {
+    color: #555;
+    top: 7.5%;
+    font-size: 25px;
+    padding: 20px 15px;
+}
+.meta-lists {
+    margin: 15px 0 0 20px;
+    display: inline-block;
+    font-size: 16px;
+}
+.meta-lists span {
+    display: inline-block;
+    clear: both;
+    margin-top: 10px;
+}
+
+.sidebar-widget.widget-latest-posts h6.post-title.mb-10.text-limit-2-row {
+    font-weight: 700;
+}
+
+
+.author_img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.author_img img.avatar {
+    width: 100%;
+    height: 100%;
+}
+.author-bio .author-info h3 a {
+    font-weight: 600;
+}
+.social-sticky .heateor_sss_sharing_ul a {
+    display: block !important;
+    clear: both;
+    position: relative;
+    margin: 10px auto !important;
+    text-align: center !important;
+}
+
+
+
+/*-------------------------------------------------------
+09. CUSTOM TRENDING NEWS SECTION
+---------------------------------------------------------*/
+.cat-heading-trending h3 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.trending-news h6 {
+    font-size: 14px !important;
+    font-weight: 700;
+}
+.trending-news span.numbers {
+    font-size: 35px;
+    display: inline-block;
+    color: #777;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+
+
+
+/*-------------------------------------------------------
+10. CUSTOM SUB HEADING SECTION
+---------------------------------------------------------*/
+.sub_heading {
+    display: block;
+    clear: both;
+    text-align: center;
+}
+.sub_heading h6{
+    border: 1px solid #c00;
+    color: #c00;
+    display: inline-block;
+    font-weight: 800;
+    padding: 5px 15px;
+}
+.sub_heading_content {
+    font-size: 16px;
+    font-weight: 800;
+    color: #666;
+    text-align: center;
+}
+
+
+
+/*-------------------------------------------------------
+11. CUSTOM POST CATEGORIES SECTION
+---------------------------------------------------------*/
+.social-sticky .post-categories {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+.social-sticky .post-categories li {
+    display: block !important;
+    margin-right: 0px;
+    text-align: center;
+    width: 100%;
+}
+.social-sticky .post-categories li a {
+    border: none;
+    border-radius: 0;
+    display: block;
+    clear: both;
+    width: auto;
+    height: auto;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+.social-sticky .post-categories li a .ti-folder {
+    padding-right: 8px;
+}
+.tags ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+
+
+/*-------------------------------------------------------
+12. CUSTOM CONTACT FORM SECTION
+---------------------------------------------------------*/
+.btn-setopress {
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+.btn-setopress:hover {
+    background: #fff;
+    color: #333;
+}
+.wpcf7-not-valid-tip {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+.wpcf7-response-output {
+    border-color: #c00 !important;
+    border-radius: 5px;
+    background: #c00;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px !important;
+    letter-spacing: 1px;
+}
+
+h2.comments-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+.comments-area .comment-list {
+    padding: 0;
+    list-style: none;
+}
+.comments-area .comment-list li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    list-style: none;
+}
+.comments-area .comment-list ul.children {
+    margin-left: 30px;
+}
+.comments-area .comment-list ul.children li {
+    background: #f8f8f8;
+}
+
+
+
+/*-------------------------------------------------------
+13. CUSTOM RELATED POSTS SECTION
+---------------------------------------------------------*/
+.related-posts h3 {
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Khand' !important;
+}
+.related-posts h4.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+
+
+/*-------------------------------------------------------
+14. CUSTOM PAGINATION SECTION
+---------------------------------------------------------*/
+.pagination.paging-navigation ul.page-numbers {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    overflow: hidden;
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.pagination.paging-navigation ul.page-numbers li {
+    display: inline-block;
+    margin: 10px 5px;
+}
+.pagination.paging-navigation ul.page-numbers li a.page-numbers, 
+.pagination.paging-navigation ul.page-numbers li span.page-numbers.current {
+    border: 1px solid #555;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    padding: 2px;
+}
+.pagination.paging-navigation ul.page-numbers li a.page-numbers:hover, 
+.pagination.paging-navigation ul.page-numbers li span.page-numbers.current {
+    background: #333;
+    color: #fff;
+}
+
+
+
+
+/*-------------------------------------------------------
+15. CUSTOM TEAM SECTION
+---------------------------------------------------------*/
+.team_lists.post-content.media-body {
+    padding-top: 20px;
+}
+.social_info a {
+    display: inline-block;
+    color: #555;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.social_info a:hover {
+    color: #c00;
+}
+.btn-team {
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 2px 25px;
+}
+
+.entry-main-content ul.all_team.list-post li.mb-15 {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+.all_team .post-content.media-body {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.all_team .post-content.media-body h6 {
+    font-size: 25px;
+}
+.all_team.list-post .post-thumb-300 {
+    height: auto;
+    width: 300px;
+}
+.team_info {
+    margin-top: 15px;
+}
+.team_info li {
+    list-style: none !important;
+}
+.team_info li i{
+    color: #888;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.team_info li span{
+    display: inline-block;
+    margin-right: 30px;
+}
+.team_info li span a{
+    color: #444;
+    font-size: 20px;
+}
+.team_info li span a:hover{
+    color: #c00;
+}
+
+.forecast {margin: 30px 0 60px;}
+.text-hidden {display: none !important;}
+
+
+
+
+
+/*-------------------------------------------------------
+16. CUSTOM 400 | NOT FOUND SECTION
+---------------------------------------------------------*/
+.not-found {
+    padding: 40px 0px 80px;
+}
+.not-found form.search-form label {
+    width: 40%;
+}
+.not-found form.search-form label .search-field {
+    width: 100%;
+    padding: 14px;
+}
+.not-found form.search-form .search-submit {
+    border: 1px solid #333;
+    background: #333;
+    color: #fff;
+    padding: 15px 25px;
+}
+.not-found form.search-form .search-submit:hover {
+    background: #fff;
+    color: #333;
+}
+
+
+
+/*-------------------------------------------------------
+17. CUSTOM ADVERTISEMENT SECTION
+---------------------------------------------------------*/
+.adv-block {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.adv-block table thead td {
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.adv-block table td {
+    padding: 15px 15px;
+}
+.notes {
+    color: #c00;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+.adv-block h3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/*-------------------------------------------------------
+17. CUSTOM FOOTER SECTION
+---------------------------------------------------------*/
+.footer-area h5 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Khand' !important;
+}
+.footer-area #footer-menu {
+    display: block;
+    width: 100%;
+}
+.footer-area #footer-menu li {
+    border-bottom: 1px dotted #ccc;
+    padding: 6px 0;
+}
+.footer-area #footer-menu li:last-child {
+    border-bottom: none;
+}
+.footer-area #footer-menu li a {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer-area #footer-menu li a:hover {
+    color: #000;
+}
+
+
+
+
+/*-------------------------------------------------------
+18. RESPONSIVE MEDIA QUERY
+---------------------------------------------------------*/
 
 /* Normal desktop :1200px. */
 @media (min-width:1200px){
